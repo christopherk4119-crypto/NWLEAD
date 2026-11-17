@@ -6,7 +6,7 @@ Single-page site. Next.js (App Router, TypeScript) + Tailwind CSS. Deploy-ready 
 ```bash
 npm install
 npm run dev      # http://localhost:3000
-npm run build    # production build check
+npm run build    # production build check (Next.js 16)
 ```
 
 ## Edit business details
