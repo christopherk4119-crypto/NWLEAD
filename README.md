@@ -26,7 +26,7 @@ Photo uploads are not included (Formspree file uploads need a paid plan).
 Put a transparent PNG at `public/logo.png` (200×80 slot), then in `components/Logo.tsx` replace the `<svg>` with the `<Image>` line in the comment. The favicon is `app/icon.svg`.
 
 ## Swap the photos
-Three images only, in `public/images/` (see `public/images/CREDITS.md`):
+The site works with **zero** photos: each slot falls back to a branded graphic. To add one (max 3), save it in `public/images/` and set its path in `lib/site.ts` → `photos`. See `public/images/CREDITS.md`:
 - `hero-home-interior.jpg`: hero + social share image
 - `service-drywall-repair.jpg`: drywall section
 - `commercial-office-hallway.jpg`: commercial panel

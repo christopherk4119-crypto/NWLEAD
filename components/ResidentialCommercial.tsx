@@ -30,14 +30,9 @@ export default function ResidentialCommercial() {
           </Reveal>
 
           <Reveal delay={100} className="card flex flex-col overflow-hidden bg-pine text-white/85">
-            <Image
-              src="/images/commercial-office-hallway.jpg"
-              alt="Clean office hallway in a commercial building"
-              width={1200}
-              height={600}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="h-48 w-full object-cover"
-            />
+            {site.photos.commercial && (
+              <Image src={site.photos.commercial} alt="Clean office hallway in a commercial building" width={1200} height={600} sizes="(min-width: 1024px) 50vw, 100vw" className="h-48 w-full object-cover" />
+            )}
             <div className="flex flex-1 flex-col p-8">
               <div className="flex items-center gap-3">
                 <div className="flex h-14 w-14 items-center justify-center rounded-card bg-amber text-ink"><Building2 className="h-7 w-7" aria-hidden="true" /></div>

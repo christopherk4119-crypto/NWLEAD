@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Check, MessageSquare, Phone } from "lucide-react";
 import MeasureLine from "./MeasureLine";
 import { site } from "@/lib/site";
+import HeroGraphic from "./HeroGraphic";
 
 const trust = [
   `Based in ${site.homeBase}`,
@@ -13,15 +14,14 @@ const trust = [
 export default function Hero() {
   return (
     <section id="top" className="relative isolate flex min-h-[92vh] items-center overflow-hidden bg-pine pt-[72px]">
-      <Image
-        src="/images/hero-home-interior.jpg"
-        alt="Bright, tidy living room in a Calgary home"
-        fill
-        priority
-        sizes="100vw"
-        className="-z-20 object-cover"
-      />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/90 via-pine/80 to-pine/40" />
+      {site.photos.hero ? (
+        <>
+          <Image src={site.photos.hero} alt="Bright, tidy living room in a Calgary home" fill priority sizes="100vw" className="-z-20 object-cover" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/90 via-pine/80 to-pine/40" />
+        </>
+      ) : (
+        <HeroGraphic />
+      )}
 
       <div className="container-x py-16">
         <div className="max-w-2xl">

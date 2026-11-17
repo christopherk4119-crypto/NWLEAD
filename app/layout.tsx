@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     siteName: site.name,
     title,
     description,
-    // Reuses the hero photo (per brief). Ideal size 1200x630.
-    images: [{ url: "/images/hero-home-interior.jpg", width: 1200, height: 630, alt: "Handyman Calgary NW" }],
+    // Reuses the hero photo when set; otherwise app/opengraph-image.tsx (branded card) is used.
+    ...(site.photos.hero ? { images: [{ url: site.photos.hero, width: 1200, height: 630, alt: site.name }] } : {}),
   },
-  twitter: { card: "summary_large_image", title, description, images: ["/images/hero-home-interior.jpg"] },
+  twitter: { card: "summary_large_image", title, description, ...(site.photos.hero ? { images: [site.photos.hero] } : {}) },
 };
 
 export const viewport: Viewport = { themeColor: "#1F4D47" };

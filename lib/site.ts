@@ -44,6 +44,14 @@ export const site = {
   hoursDetail: "Open until 9 p.m. (full hours coming soon)", // CONFIRM WITH CLIENT
   openingHoursSchema: null as string | null, // e.g. "Mo-Su 08:00-21:00" — CONFIRM WITH CLIENT
 
+  // PHOTOS (max 3). null = show the branded graphic instead. To use a photo, drop it in
+  // /public/images/ and set the path, e.g. hero: "/images/hero-home-interior.jpg". See CREDITS.md.
+  photos: {
+    hero: null as string | null,
+    drywall: null as string | null,
+    commercial: null as string | null,
+  },
+
   url: "https://www.handymancalgarynw.com", // CONFIRM WITH CLIENT: final domain
 
   links: {

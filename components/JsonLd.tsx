@@ -7,7 +7,7 @@ export default function JsonLd() {
     name: site.name,
     slogan: site.tagline,
     url: site.url,
-    image: `${site.url}/images/hero-home-interior.jpg`,
+    image: `${site.url}${site.photos.hero ?? "/opengraph-image"}`,
     telephone: "+1-403-891-6380",
     email: site.email,
     address: { "@type": "PostalAddress", addressLocality: site.city, addressRegion: site.region, addressCountry: site.country },

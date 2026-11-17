@@ -4,6 +4,7 @@ import Reveal from "./Reveal";
 import QuoteLink from "./QuoteLink";
 import MeasureLine from "./MeasureLine";
 import { site } from "@/lib/site";
+import DrywallGraphic from "./DrywallGraphic";
 
 const steps = [
   { icon: Phone, title: "Call or text", body: `Tell Cam what's going on. ${site.phoneDisplay}, or send the form.` },
@@ -30,14 +31,11 @@ export default function FeaturedService() {
             </blockquote>
           </Reveal>
           <Reveal delay={100} className="relative">
-            <Image
-              src="/images/service-drywall-repair.jpg"
-              alt="Close-up of drywall patching and taping"
-              width={1200}
-              height={900}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="aspect-[4/3] w-full rounded-card object-cover shadow-lift"
-            />
+            {site.photos.drywall ? (
+              <Image src={site.photos.drywall} alt="Close-up of drywall patching and taping" width={1200} height={900} sizes="(min-width: 1024px) 50vw, 100vw" className="aspect-[4/3] w-full rounded-card object-cover shadow-lift" />
+            ) : (
+              <DrywallGraphic />
+            )}
           </Reveal>
         </div>
 

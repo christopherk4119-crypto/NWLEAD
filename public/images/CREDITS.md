@@ -2,10 +2,10 @@
 
 This site uses **3 stock photos max** (by design, to keep it lean). Everything else is icons + CSS/SVG.
 
-> **Status: PLACEHOLDERS.** The files in this folder are brand-coloured placeholder graphics
-> ("PHOTO SLOT"). The build environment couldn't reach Unsplash, so the real photos weren't
-> downloaded. Run `bash scripts/fetch-photos.sh` on your own machine, or drop your own files in
-> using the exact filenames below.
+> **Status: NO PHOTOS YET, and the site doesn't need them.** Each slot shows a branded graphic until a
+> photo is added. To add one: save it here with the filename below, then set its path in
+> `lib/site.ts` → `photos` (e.g. `hero: "/images/hero-home-interior.jpg"`). Unsplash blocks automated
+> downloads, so grab them in a browser (or try `bash scripts/fetch-photos.sh`).
 
 | File | Used in | Suggested free photo (Unsplash License) | Photographer |
 |---|---|---|---|
