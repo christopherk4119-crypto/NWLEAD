@@ -27,11 +27,10 @@ Put a transparent PNG at `public/logo.png` (200×80 slot), then in `components/L
 
 ## Swap the photos
 The site works with **zero** photos: each slot falls back to a branded graphic. To add one (max 3), save it in `public/images/` and set its path in `lib/site.ts` → `photos`. See `public/images/CREDITS.md`:
-- `hero-home-interior.jpg`: hero + social share image
-- `service-drywall-repair.jpg`: drywall section
-- `commercial-office-hallway.jpg`: commercial panel
+- `hero-living-room.jpg`: hero + social share image
+- `service-paint-ready-wall.jpg`: drywall section
+- `commercial-office-corridor.jpg`: commercial panel
 
-`bash scripts/fetch-photos.sh` downloads the two suggested Unsplash photos. Past-project tiles are CSS placeholders; replace them with Cam's real photos in `components/PastProjects.tsx`.
 
 ## Deploy to Vercel
 1. Push this repo to GitHub.

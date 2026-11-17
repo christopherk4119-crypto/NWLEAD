@@ -32,7 +32,7 @@ export default function FeaturedService() {
           </Reveal>
           <Reveal delay={100} className="relative">
             {site.photos.drywall ? (
-              <Image src={site.photos.drywall} alt="Close-up of drywall patching and taping" width={1200} height={900} sizes="(min-width: 1024px) 50vw, 100vw" className="aspect-[4/3] w-full rounded-card object-cover shadow-lift" />
+              <Image src={site.photos.drywall} alt="Paint roller on a smooth, freshly finished wall" width={1200} height={900} sizes="(min-width: 1024px) 50vw, 100vw" className="aspect-[4/3] w-full rounded-card object-cover shadow-lift" />
             ) : (
               <DrywallGraphic />
             )}

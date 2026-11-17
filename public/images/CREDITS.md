@@ -1,18 +1,16 @@
 # Photo credits
 
-This site uses **3 stock photos max** (by design, to keep it lean). Everything else is icons + CSS/SVG.
+3 stock photos max, by design. Everything else is icons + CSS/SVG.
+All three are from Unsplash (free under the Unsplash License; attribution appreciated, not required).
 
-> **Status: NO PHOTOS YET, and the site doesn't need them.** Each slot shows a branded graphic until a
-> photo is added. To add one: save it here with the filename below, then set its path in
-> `lib/site.ts` → `photos` (e.g. `hero: "/images/hero-home-interior.jpg"`). Unsplash blocks automated
-> downloads, so grab them in a browser (or try `bash scripts/fetch-photos.sh`).
+| File | Used in | Source |
+|---|---|---|
+| `hero-living-room.jpg` | Hero + OG/Twitter share image | https://images.unsplash.com/photo-1505691938895-1758d7feb511 (bright living room) |
+| `service-paint-ready-wall.jpg` | Drywall feature section | https://images.unsplash.com/photo-1562259949-e8e7689d7828 (paint roller on fresh wall) |
+| `commercial-office-corridor.jpg` | Commercial panel | https://images.unsplash.com/photo-1497366216548-37526070297c (office corridor) |
 
-| File | Used in | Suggested free photo (Unsplash License) | Photographer |
-|---|---|---|---|
-| `hero-home-interior.jpg` (1920×1080, keep < 250KB) | Hero + OG/Twitter image | https://unsplash.com/photos/ZuHIek5xn_I "A bright and airy living room with modern decor" | Nha Chill (verify on page) |
-| `service-drywall-repair.jpg` (1200×900) | Drywall feature section | No verified free match found yet. Search https://unsplash.com/s/photos/drywall and pick a **free** (not Unsplash+) patch/taping close-up | TBD |
-| `commercial-office-hallway.jpg` (1200×600) | Commercial panel | https://unsplash.com/photos/yWwob8kwOCk "Hallway between glass-panel doors" | Nastuh Abootalebi (verify on page) |
+Photographer names: not captured (Unsplash blocked the photo pages from the build environment).
+To add a credit, use a reverse image search (or Unsplash search) in a browser to find the photo page and photographer.
 
-Rules when picking: Unsplash **License** (free), not **Unsplash+** (paid). No visible company logos or branded vans. Canadian-suburban look over luxury mansions.
-
-Best long-term option: swap all three for Cam's own job photos.
+To go back to the branded graphics, set the path to `null` in `lib/site.ts` → `photos`.
+Best long-term: swap all three for Cam's own job photos.
